@@ -1,62 +1,72 @@
 # ML Regression Model
 
-> A collection of Machine Learning Regression models and workflow to train, evaluate, and compare regression algorithms on real datasets.
+A machine learning project demonstrating the implementation, training, and evaluation of multiple regression models using a real-world dataset.
 
 ---
 
-## 🚀 Overview
+## Overview
 
-This repository contains implementations of various **regression models** applied to datasets (e.g., `auto-mpg.csv`).  
-It includes Python scripts and Jupyter Notebooks demonstrating the full ML workflow:
+This repository showcases a complete regression workflow including data preprocessing, model training, performance evaluation, and comparison across different regression algorithms.
 
-✔ Data loading & preprocessing  
-✔ Model training  
-✔ Prediction & evaluation  
-✔ Results comparison
-
-*No description was originally provided in the repo — this README fills that gap.*
+The project is intended for learning, experimentation, and as a reference for regression-based ML pipelines.
 
 ---
 
-## 📂 Repository Structure
-├── ML_Project_Done.ipynb # Jupyter Notebook with interactive analysis
-├── ML_Project_Done.py # Python script for training & evaluating regression models
-├── auto-mpg.csv # Auto MPG dataset
-├── model_results_kml.csv # Results summary
-└── README.md # Project documentation
+## Project Structure
+```
+├── ML_Project_Done.ipynb # Jupyter notebook with full workflow
+├── ML_Project_Done.py # Python script for model training and evaluation
+├── auto-mpg.csv # Dataset
+├── model_results_kml.csv # Model evaluation results
+└── README.md
+```
 
 
 ---
 
-## 🛠️ Regression Models Covered
+## Models Implemented
 
-Implemented models include (but are not limited to):
-
-- **Linear Regression**
-- **Polynomial Regression**
-- **Lasso & Ridge Regression**
-- **Support Vector Regression**
-- **Decision Tree Regression**
-- **Random Forest Regression**
-- **MLP (Neural Network) Regression**
-
-These types of regression allow you to model and predict continuous outcomes using different algorithms and complexity levels. :contentReference[oaicite:1]{index=1}
+- Linear Regression  
+- Polynomial Regression  
+- Ridge Regression  
+- Lasso Regression  
+- Support Vector Regression (SVR)  
+- Decision Tree Regression  
+- Random Forest Regression  
+- MLP Regressor (Neural Network)
 
 ---
 
-## 🧪 Getting Started
+## Workflow
 
-### 🧰 Prerequisites
+1. Load and preprocess the dataset  
+2. Perform feature scaling and train-test split  
+3. Train multiple regression models  
+4. Evaluate models using standard regression metrics  
+5. Store and compare results
 
-Make sure you have the following installed:
+---
 
-- Python 3.x
-- `pip` (package manager)
-- Jupyter Notebook (optional)
+## Evaluation Metrics
 
-Install required packages:
+- Mean Squared Error (MSE)  
+- Root Mean Squared Error (RMSE)  
+- R² Score  
 
+Evaluation results are saved in `model_results_kml.csv`.
+
+---
+
+## Requirements
+
+1. Python 3.x with the following libraries:
+2. numpy
+3. pandas
+4. scikit-learn
+5. matplotlib
+6. seaborn
+
+Install dependencies:
 ```bash
-pip install -r requirements.txt
-
+pip install numpy pandas scikit-learn matplotlib seaborn
 
